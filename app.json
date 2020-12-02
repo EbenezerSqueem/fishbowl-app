@@ -1,0 +1,12 @@
+{
+  "name": "fishbowl-app",
+  "displayName": "fishbowl-app",
+  "expo": {
+    "name": "fishbowl-app",
+    "slug": "fishbowl-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
