@@ -65,7 +65,9 @@ public class MainApplication extends Application implements ReactApplication {
       if (BuildConfig.DEBUG) {
         return super.getBundleAssetName();
       } else {
-        return UpdatesController.getInstance().getBundleAssetName();
+        //return UpdatesController.getInstance().getBundleAssetName();
+        // added for jitsi meet
+        return "app.bundle";
       }
     }
   };

@@ -6,6 +6,7 @@ import socket from "../apis/socketConnection";
 import { GameContext } from "../context/GameProvider";
 import { GameScreen } from "../screens/gameScreens/GameScreen";
 import { ScoreboardScreen } from "../screens/gameScreens/ScoreboardScreen";
+import { JitsiMeetScreen } from "../screens/gameScreens/JitsiMeetScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -41,6 +42,16 @@ export const GameTabs = ({ navigation }) => {
         labelStyle: { fontWeight: "bold" },
       }}
     >
+      <Tab.Screen
+        name="Video"
+        component={JitsiMeetScreen}
+        options={{
+          tabBarLabel: "Video",
+          tabBarIcon: ({ color }) => {
+            return <FontAwesome name="video-camera" color={color} size={24} />;
+          },
+        }}
+      />
       <Tab.Screen
         name="GameScreen"
         component={GameScreen}
